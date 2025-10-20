@@ -1,3 +1,5 @@
+import sys
+
 from .command import Command
 
 
@@ -26,3 +28,17 @@ class TodoList:
                 self.command.add_task()
             elif choice == "2":
                 self.command.show_tasks()
+            elif choice == "3":
+                self.command.update_task()
+            elif choice == "4":
+                self.command.delete_task()
+            elif choice == "5":
+                self.command.change_task_status()
+            elif choice == "6":
+                sys.exit()
+            else:
+                print("Bunaqa parametr mavjud emas!")                
+
+
+            
+            
